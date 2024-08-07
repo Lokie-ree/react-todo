@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-blue-700">
+    <div className="min-h-screen bg-base-800">
       <Header />
       <main className="p-4">
         <div className="flex mb-4">

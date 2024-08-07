@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center p-4 bg-primary">
+      <header className="flex justify-between items-center p-4 bg-base-800">
         <h1 className="text-xl font-bold">Randall's To-Do App</h1>
         <button
           className="btn btn-circle bg-primary-content rounded-full text-xl"
