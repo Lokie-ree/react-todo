@@ -8,15 +8,15 @@ const Header = () => {
   const toggleTheme = () => {
     const html = document.documentElement;
     html.setAttribute('data-theme', 
-      html.getAttribute('data-theme') === 'light' ? 'dark': 'light');
+      html.getAttribute('data-theme') === 'acid' ? 'sunset': 'acid');
   }
 
   return (
     <>
-      <header className="flex justify-between items-center p-4 bg-base-800">
-        <h1 className="text-xl font-bold">Randall's To-Do App</h1>
+      <header className="flex justify-between items-center p-4 bg-accent-content">
+        <h1 className="text-xl text-accent font-bold">Randall's To-Do App</h1>
         <button
-          className="btn btn-circle bg-primary-content rounded-full text-xl"
+          className="btn btn-ghost bg-accent-content text-accent rounded-full text-xl"
           onClick={toggleTheme}
           aria-label="Toggle Dark Mode"
         >
