@@ -1,14 +1,14 @@
-import React from 'react'
-import Task from './Task'
+import React from "react";
+import Task from "./TaskItem";
 
-const TaskList = ({ tasks, onDelete }) => {
+const TaskList = ({ tasks, onDelete, onEdit }) => {
   return (
-      <div className="bg-accent-content text-accent rounded-box">
-        {tasks.map((task) => (
-        <Task key={task.id} task={task} onDelete={onDelete} />
+    <div className="flex flex-col gap-4 text-accent font-bold rounded-xl">
+      {tasks.map((task) => (
+        <Task key={task.id} task={task} onDelete={onDelete} onEdit={onEdit} />
       ))}
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default TaskList
+export default TaskList;

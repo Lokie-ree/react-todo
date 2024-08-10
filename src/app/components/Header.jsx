@@ -1,33 +1,19 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { BsSun, BsMoon } from 'react-icons/bs'
+import React from "react";
+import ThemeController from "./ThemeController";
 
 const Header = () => {
-
-  const toggleTheme = () => {
-    const html = document.documentElement;
-    html.setAttribute('data-theme', 
-      html.getAttribute('data-theme') === 'acid' ? 'sunset': 'acid');
-  }
-
   return (
     <>
-      <header className="flex justify-between items-center p-4 bg-accent-content">
-        <h1 className="text-xl text-accent font-bold">Randall's To-Do App</h1>
-        <button
-          className="btn btn-ghost bg-accent-content text-accent rounded-full text-xl"
-          onClick={toggleTheme}
-          aria-label="Toggle Dark Mode"
-        >
-          <BsSun className="block dark:hidden"/>
-          <BsMoon className="hidden dark:block"/>
-        </button>
+      <header className="flex justify-between items-center m-4 p-4 bg-primary rounded-xl">
+        <h1 className="text-2xl text-primary-content font-bold">
+          Randall's To-Do App
+        </h1>
+        <ThemeController />
       </header>
     </>
-    
-    
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
