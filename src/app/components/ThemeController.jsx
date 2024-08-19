@@ -7,9 +7,9 @@ const ThemeController = () => {
       <div
         tabIndex={0}
         role="button"
-        className="btn btn-circle bg-accent text-accent-content sm:btn-sm md:btn-md lg:btn-lg"
+        className="btn btn-accent btn-circle bg-accent text-accent-content"
       >
-        <FaAtom className="text-lg" />
+        <FaAtom className="text-xl" />
       </div>
       <ul
         tabIndex={0}

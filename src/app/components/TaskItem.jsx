@@ -1,27 +1,21 @@
 "use client";
 
 import React from "react";
-import { FaTrash, FaPencilAlt } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 
-const Task = ({ task, onDelete, onEdit }) => {
+const Task = ({ task, deleteTask }) => {
   return (
-    <div className="flex justify-between items-center bg-primary text-accent-content p-4 rounded-xl shadow-sm">
-      <span>{task.text}</span>
-      <div className="flex gap-2">
+    <>
+      <div className="flex justify-between items-center bg-primary text-accent-content p-4 rounded-xl shadow-sm">
+        <span>{task.text}</span>
         <button
-          className="btn btn-accent btn-circle"
-          onClick={() => document.getElementById("edit_modal").showModal()}
-        >
-          <FaPencilAlt />
-        </button>
-        <button
-          className="btn btn-accent btn-circle"
-          onClick={() => document.getElementById("delete_modal").showModal()}
+          className="btn btn-accent btn-circle text-lg"
+          onClick={() => deleteTask(task.id)}
         >
           <FaTrash />
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
