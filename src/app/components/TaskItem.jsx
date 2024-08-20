@@ -6,7 +6,7 @@ import { FaTrash } from "react-icons/fa";
 const Task = ({ task, deleteTask }) => {
   return (
     <>
-      <div className="flex justify-between items-center bg-primary text-accent-content p-4 rounded-xl shadow-sm">
+      <div className="flex justify-between items-center bg-primary text-primary-content p-3 rounded-xl shadow-xl">
         <span>{task.text}</span>
         <button
           className="btn btn-accent btn-circle text-lg"

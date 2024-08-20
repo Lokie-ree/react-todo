@@ -3,7 +3,7 @@ import { FaAtom } from "react-icons/fa";
 
 const ThemeController = () => {
   return (
-    <div className="dropdown">
+    <div className="dropdown dropdown-left">
       <div
         tabIndex={0}
         role="button"
@@ -13,7 +13,7 @@ const ThemeController = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl"
+        className="dropdown-content bg-base-300 rounded-box z-[1] w-30 p-2 shadow-2xl"
       >
         <li>
           <input
